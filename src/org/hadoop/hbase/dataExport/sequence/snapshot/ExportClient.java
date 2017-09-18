@@ -143,6 +143,8 @@ public class ExportClient {
 			s.setFilter(exportFilter);
 		}
 
+		// You may also specify all other filters through Scan interface.
+
 		int batching = conf.getInt(EXPORT_BATCHING, -1);
 		if (batching !=  -1){
 			try {
